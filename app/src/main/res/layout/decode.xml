@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Image Decryption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dec_header" android:textStyle="normal|bold" android:textAllCaps="true"
+                android:textAlignment="center" android:textSize="24sp"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:layout_marginTop="20dp"/>
+        <TextView
+                android:text="Enter The Image To Be Decrypted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dec_prompt"
+                android:textAllCaps="false" android:textAlignment="center" android:textSize="18sp"
+                android:layout_below="@+id/dec_header" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:layout_marginTop="9dp"/>
+        <ImageView
+                android:id="@+id/imageToDownload"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="#D6D6D6"
+                android:padding="5dp"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"/>
+        <Button
+                android:text="EXTRACT MESSAGE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bDecrypt"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

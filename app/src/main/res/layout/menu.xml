@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView11" android:layout_weight="1"
+            android:layout_marginTop="78dp" android:textAllCaps="true"
+            android:textAlignment="center" android:textSize="24sp" android:textStyle="normal|bold"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:text="This application will allow you to encode or decode images with encrypted text."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textAlignment="center" android:textSize="18sp"
+            android:layout_marginTop="119dp" android:paddingLeft="45dp" android:paddingRight="45dp"
+            android:layout_below="@+id/textView11" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <Button
+            android:text="ENCODE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp" android:id="@+id/bEncode"
+            android:layout_below="@+id/textView7" android:layout_centerHorizontal="true"
+            android:onClick="onButtonClick"/>
+    <Button
+            android:text="DECODE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:id="@+id/bDecode"
+            android:layout_below="@+id/bEncode" android:layout_alignLeft="@+id/bEncode"
+            android:layout_alignStart="@+id/bEncode" android:onClick="onButtonClick"/>
+</RelativeLayout>
